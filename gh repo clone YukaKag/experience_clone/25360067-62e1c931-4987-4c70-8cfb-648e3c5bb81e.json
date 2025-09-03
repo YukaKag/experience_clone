@@ -1,0 +1,1721 @@
+{
+	"info": {
+		"_postman_id": "25360067-62e1c931-4987-4c70-8cfb-648e3c5bb81e",
+		"name": "HW 13.1 Kaganovska",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Production 13.1",
+			"item": [
+				{
+					"name": "логін",
+					"id": "25360067-f42170e0-9dff-40fe-880e-78201c852324",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1+.реєстрація в системі нового користувача",
+					"id": "25360067-6eca63e2-225f-4dc4-8039-941d79acc3fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user@example.com\",\r\n  \"Name\": \"John\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"StrongP4ss\",\r\n  \"ReEnterPassword\": \"StrongP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/Auth/signup",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/Auth/signup"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2+.реєстрація в системі нового користувача",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3b13e21b-b650-4625-8685-ad7fce4267e8",
+								"exec": [
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "180d06d9-9cbe-4aa9-a377-aa703118e5ff",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "25360067-8b080e86-24e5-4ea9-a6b4-08eb66b814f1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user123456@example.com\",\r\n  \"Name\": \"Al\",\r\n  \"LastName\": \"Smithsonian\",\r\n  \"Password\": \"Aa1secure\",\r\n  \"ReEnterPassword\": \"Aa1secure\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1-.реєстрація в системі нового користувача",
+					"id": "25360067-5fa7efa8-98cd-4067-8cb6-0138c25fe71e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Name\": \"John\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"StrongP4ss\",\r\n  \"ReEnterPassword\": \"StrongP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2-.реєстрація в системі нового користувача",
+					"id": "25360067-3b341e8f-da57-41d5-8aa2-221db416a833",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"invalid-email\",\r\n  \"Name\": \"Jane\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"StrongP4ss\",\r\n  \"ReEnterPassword\": \"StrongP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3-.реєстрація в системі нового користувача",
+					"id": "25360067-4580bb61-401a-48a2-adaf-b4788f36dbdd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user@example.com\",\r\n  \"Name\": \"Michael\",\r\n  \"LastName\": \"Johnson\",\r\n  \"Password\": \"ValidPass1\",\r\n  \"ReEnterPassword\": \"DifferentPass1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4-реєстрація в системі пового користувача",
+					"id": "25360067-6cbff857-8914-44fc-bd5e-38611ca54702",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"test@example.com\",\r\n  \"Name\": \"J\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"ValidP4ss\",\r\n  \"ReEnterPassword\": \"ValidP4ss\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6- реєстрація в системі нового користувача",
+					"id": "25360067-98c2c656-557b-4056-ba88-6d718f466163",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user@example.com\",\r\n  \"Name\": \"John\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"ValidP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5- реєстрація в системі нового користувача",
+					"id": "25360067-1828d60c-a422-4f11-a60e-4d4a3d0c3bdb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user@example.com\",\r\n  \"Name\": \"John\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"NoDigitsHere\",\r\n  \"ReEnterPassword\": \"NoDigitsHere\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "7+ позитивна реєстрація в системі нового користувача",
+					"id": "25360067-3fc792d3-c4fc-4423-b0da-10ba40fc35a2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mail\": \"Msim@gmail.com\",\r\n    \"name\": \"Yuka\",\r\n    \"lastName\": \"Kaganov\",\r\n    \"password\": \"Podushka123\",\r\n    \"reEnterPassword\": \"Podushka123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "8+позитивна реєстрація клієнта в системі",
+					"id": "25360067-22c13fac-81f0-4213-961a-19e97004b1c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mail\": \"Msim@ukr.net\",\r\n    \"name\": \"Max\",\r\n    \"lastName\": \"Partuk\",\r\n    \"password\": \"Samba321\",\r\n    \"reEnterPassword\": \"Samba321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "9+заміна всіх даних клієнта в системі",
+					"id": "25360067-9eaf58b6-0cd7-4175-a69c-a56f80fba7bd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"filter\":\r\n     {  \r\n     \"Email\": \"Msim@gmail.com\",\r\n     \"Name\": \"Yuka\",\r\n     \"LastName\": \"Kaganov\",\r\n     \"Password\": \"Podushka123\",\r\n     \"ReEnterPassword\": \"Podushka123\"\r\n    },\r\n   \"update\":\r\n    {\r\n     \"Email\": \"Holod@gmail.com\",\r\n      \"Name\": \"Yana\",\r\n      \"LastName\": \"Marchuk\",\r\n      \"Password\": \"Kovdra123\",\r\n      \"ReEnterPassword\": \"Kovdra123\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "11+ додаємо авто",
+					"id": "25360067-d1cc9e8c-2ff3-497d-8e70-33816468b805",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"status\": \"ok\",\r\n  \"data\": [\r\n        {\r\n      \"id\": 95,\r\n      \"carBrandId\": 1,\r\n      \"carModelId\": 2,\r\n      \"initialMileage\": 11,\r\n      \"updatedMileageAt\": \"2021-06-17T15:26:36.000Z\",\r\n      \"mileage\": 111,\r\n      \"brand\": \"Audi\",\r\n      \"model\": \"R8\",\r\n      \"logo\": \"audi.png\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "12+ додані витрати на авто",
+					"id": "25360067-602b8f70-a294-4c9e-ab69-d811d8dc4897",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"ok\",\r\n  \"data\": [\r\n    {\r\n      \"id\": 94,\r\n      \"carId\":77,\r\n      \"reportedAt\": \"2024-11-23\",\r\n      \"mileage\": 111,\r\n      \"liters\": 11,\r\n      \"totalCost\": 11\r\n    }\r\n  ],\r\n  \"currentPage\": 1,\r\n  \"totalItems\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13+видалення існуючого користувача",
+					"id": "25360067-daf5d668-d450-46cd-8411-7e7412196e31",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"Msim@ukr.net\",\r\n  \"Password\": \"Tapok567\",\r\n  \"ReEnterPassword\": \"Tapok567\",\r\n  \"name\": \"Max\",\r\n  \"lastName\": \"Partuk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "25360067-0b57ac80-3bfd-43a5-b175-20dc691b8b2d",
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "{{vault:authorization-password}}",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "guest",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "45898258-654b-4db3-9be1-d00d9d65d877",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a3e320bb-6f7c-4dce-a816-cffee1032bd6",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Dev 13.1",
+			"item": [
+				{
+					"name": "логін",
+					"id": "25360067-8dc2d45a-36a8-4436-bfc8-84f97dcad221",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1+.реєстрація в системі нового користувача",
+					"id": "25360067-efb41d02-2ea5-4d0f-8dea-53aa88a918cb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user@example.com\",\r\n  \"Name\": \"John\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"StrongP4ss\",\r\n  \"ReEnterPassword\": \"StrongP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2+.реєстрація в системі нового користувача",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3b13e21b-b650-4625-8685-ad7fce4267e8",
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"packages": {},
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "25360067-04f0cfaf-a3c2-4471-9495-979902c47555",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user123456@example.com\",\r\n  \"Name\": \"Al\",\r\n  \"LastName\": \"Smithsonian\",\r\n  \"Password\": \"Aa1secure\",\r\n  \"ReEnterPassword\": \"Aa1secure\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "1-.реєстрація в системі нового користувача",
+					"id": "25360067-61cfda2a-421e-4dc6-bfc3-1a9892241674",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Name\": \"John\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"StrongP4ss\",\r\n  \"ReEnterPassword\": \"StrongP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2-.реєстрація в системі нового користувача",
+					"id": "25360067-7715dbbd-0049-4287-8dde-20d0865538c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"invalid-email\",\r\n  \"Name\": \"Jane\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"StrongP4ss\",\r\n  \"ReEnterPassword\": \"StrongP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3-.реєстрація в системі нового користувача",
+					"id": "25360067-d0de5a80-0f01-465c-93aa-0727803acb0d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user@example.com\",\r\n  \"Name\": \"Michael\",\r\n  \"LastName\": \"Johnson\",\r\n  \"Password\": \"ValidPass1\",\r\n  \"ReEnterPassword\": \"DifferentPass1\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4-.реєстрація в системі нового користувача",
+					"id": "25360067-85385e71-37e0-4193-98e2-203de16209c7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"test@example.com\",\r\n  \"Name\": \"J\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"ValidP4ss\",\r\n  \"ReEnterPassword\": \"ValidP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5-.реєстрація в системі нового користувача",
+					"id": "25360067-6f85b05c-d7b6-409d-aec2-65d4c42617c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user@example.com\",\r\n  \"Name\": \"John\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"NoDigitsHere\",\r\n  \"ReEnterPassword\": \"NoDigitsHere\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6-.реєстрація в системі нового користувача",
+					"id": "25360067-77914d56-53fc-40a1-837e-3da9514b10b4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"user@example.com\",\r\n  \"Name\": \"John\",\r\n  \"LastName\": \"Doe\",\r\n  \"Password\": \"ValidP4ss\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "7+позитивна реєстрація клієнта в системі",
+					"id": "25360067-571133e7-931d-451c-8155-ca5c61fbfb53",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n  \"Email\": \"Msim@gmail.com\",\r\n  \"Name\": \"Yuka\",\r\n  \"LastName\": \"Kaganov\",\r\n  \"Password\": \"Podushka123\",\r\n  \"ReEnterPassword\": \"Podushka123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto.forstudy.space/api-docs/#/",
+							"protocol": "https",
+							"host": [
+								"qauto",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": "/"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "8+позитивна реєстрація клієнта в системі",
+					"id": "25360067-f6709d8a-3dc9-4d77-83d4-4071014b5d3f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mail\": \"Msim@ukr.net\",\r\n    \"name\": \"Max\",\r\n    \"lastName\": \"Partuk\",\r\n    \"password\": \"Samba321\",\r\n    \"reEnterPassword\": \"Samba321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "9+заміна всіх даних клієнта в системі",
+					"id": "25360067-6449d18a-b42f-4b7d-895e-9ac62024c4c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"filter\":\r\n     {  \r\n        \"Email\": \"Msim@gmail.com\",\r\n         \"Name\": \"Yuka\",\r\n         \"LastName\": \"Kaganov\",\r\n         \"Password\": \"Podushka123\",\r\n          \"ReEnterPassword\": \"Podushka123\"\r\n       },\r\n      \"update\":\r\n    {\r\n        \"Email\": \"Holod@gmail.com\",\r\n         \"Name\": \"Yana\",\r\n         \"LastName\": \"Marchuk\",\r\n         \"Password\": \"Kovdra123\",\r\n          \"ReEnterPassword\": \"Kovdra123\"\r\n       }\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "10+заміна Password клієнта в системі",
+					"id": "25360067-250ccb9f-4677-4708-9589-8b1b0d37543f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"filter\":\r\n     {  \r\n        \"Email\": \"Msim@ukr.net\",\r\n         \"Password\": \"Samba321\",\r\n          \"ReEnterPassword\": \"Samba321\"\r\n       },\r\n      \"update\":\r\n    {\r\n       \"Email\": \"Msim@ukr.net\",\r\n         \"Password\": \"Tapok567\",\r\n         \"ReEnterPassword\": \"Tapok567\"\r\n       }\r\n   }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "11+ додаємо авто",
+					"id": "25360067-75e97fe1-f6fe-4e2b-a35f-8ef3e4860e04",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"status\": \"ok\",\r\n  \"data\": [\r\n        {\r\n      \"id\": 95,\r\n      \"carBrandId\": 1,\r\n      \"carModelId\": 2,\r\n      \"initialMileage\": 11,\r\n      \"updatedMileageAt\": \"2021-06-17T15:26:36.000Z\",\r\n      \"mileage\": 111,\r\n      \"brand\": \"Audi\",\r\n      \"model\": \"R8\",\r\n      \"logo\": \"audi.png\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "12+ додані витрати на авто",
+					"id": "25360067-e5b80cf4-88bf-4274-a526-cb16d110ad61",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"ok\",\r\n  \"data\": [\r\n    {\r\n      \"id\": 94,\r\n      \"carId\":77,\r\n      \"reportedAt\": \"2024-11-23\",\r\n      \"mileage\": 111,\r\n      \"liters\": 11,\r\n      \"totalCost\": 11\r\n    }\r\n  ],\r\n  \"currentPage\": 1,\r\n  \"totalItems\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "13+видалення існуючого користувача",
+					"id": "25360067-fcf94e24-74fc-4560-8a97-4eed97b4b83f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "welcome2qauto",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "guest",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Email\": \"Msim@ukr.net\",\r\n  \"Password\": \"Tapok567\",\r\n  \"ReEnterPassword\": \"Tapok567\",\r\n  \"name\": \"Max\",\r\n  \"lastName\": \"Partuk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://qauto2.forstudy.space/api-docs/#",
+							"protocol": "https",
+							"host": [
+								"qauto2",
+								"forstudy",
+								"space"
+							],
+							"path": [
+								"api-docs",
+								""
+							],
+							"hash": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "25360067-74eb30de-8a64-4359-af0f-4c3ec68f578b",
+			"auth": {
+				"type": "basic"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f10da13e-d14e-48f2-8872-206960704dd0",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1233362c-dea1-4d86-a547-22feac5ca42e",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "38c059ad-1b2a-4702-8e1c-e4a746a69314",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "91f1d50a-ae8b-4a8b-8fec-7551f2345704",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
